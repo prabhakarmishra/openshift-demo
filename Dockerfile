@@ -1,6 +1,6 @@
 FROM openjdk:8
-ADD target/clouddemo-0.0.1-SNAPSHOT.jar clouddemo-0.0.1-SNAPSHOT.jar
+COPY target/clouddemo-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8081
-ENTRYPOINT ["java","-jar","clouddemo-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar","/app.jar"]
 #ENV http_proxy ""
 #ENV https_proxy ""

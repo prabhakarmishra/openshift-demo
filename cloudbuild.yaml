@@ -22,5 +22,5 @@ steps:
   args: ["push", "gcr.io/$PROJECT_ID/hello-app"]
 #deploy to Google Cloud Run
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['run', 'deploy', 'faruk-hello-app', '--image', 'gcr.io/$PROJECT_ID/hello-app', '--region', 'us-west1', '--platform', 'managed']
+  args: ['run', 'deploy', 'Hello-app', '--image', 'gcr.io/$PROJECT_ID/hello-app', '--region', 'us-west1', '--platform', 'managed']
 images: ["gcr.io/$PROJECT_ID/hello-app"]

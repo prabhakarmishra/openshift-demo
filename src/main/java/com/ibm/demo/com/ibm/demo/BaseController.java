@@ -9,7 +9,7 @@ public class BaseController {
 	
 	@GetMapping("/test/{name}")
 	public String ok(@PathVariable("name") String name) {
-		name = "Hello "+name+"!!! ... You did it Sir Ji .... Welcome to the world of cloud..";
+		name = "Hello "+name+"!!! ... Welcome to the world of cloud..";
 		return name;
 	}
 	

@@ -9,7 +9,7 @@ public class BaseController {
 	
 	@GetMapping("/test/{name}")
 	public String ok(@PathVariable("name") String name) {
-		name = "Hello "+name+"!!! ... Welcome to Serverless pipeline using Cloudbuild and CloudRun";
+		name = "Hello "+name+"!!! ... Welcome to Serverless pipeline";
 		return name;
 	}
 	
